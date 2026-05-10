@@ -1,6 +1,6 @@
 {
   "$schema": "node_modules/wrangler/config-schema.json",
-  "name": "dual-rhythm-architecture",
+  "name": "dual-rhythm-architecture-site",
   "compatibility_date": "2026-05-08",
   "observability": {
     "enabled": true
