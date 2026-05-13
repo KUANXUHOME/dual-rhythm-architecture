@@ -1,5 +1,4 @@
 # DUAL-RHYTHM ARCHITECTURE™ | Organizational Sync‑Stability Index™ (The OSS Index™) | Organizational Rhythm Governance™ (ORG™)
-A new management category.
 A Governance Currency for the AI Era. 
 Founder & Author: 李宽续 (Li Kuanxu)
 ORCID: https://orcid.org/0009-0006-7346-3999
