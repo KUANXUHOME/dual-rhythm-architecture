@@ -1,229 +1,817 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DUAL-RHYTHM ARCHITECTURE™ — The Structural Leadership Control System</title>
-    <meta name="description" content="DUAL-RHYTHM ARCHITECTURE™ | Organizational Sync‑Stability Index™ (The OSS Index™) | Organizational Rhythm Governance™ (ORG™). The first board-level structural stability governance system for the AI era.">
-    <style>
-        * { margin: 0; padding: 0; box-sizing: border-box; }
-        body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; line-height: 1.6; color: #1a1a2e; background: #f8f9fa; }
-        .container { max-width: 860px; margin: 0 auto; padding: 40px 20px; }
-        .hero { text-align: center; padding: 80px 0 60px; }
-        .hero-title { font-size: 2.2em; font-weight: 800; line-height: 1.3; color: #0a0a1a; margin: 0 auto 8px; max-width: 640px; }
-        .hero-family { font-size: 1.4em; font-weight: 700; line-height: 1.4; color: #c9a227; margin: 0 auto 6px; max-width: 640px; }
-        .hero-sub { font-size: 1em; color: #4a4a6a; margin: 0 auto 4px; max-width: 640px; }
-        .hero-desc { font-size: 0.9em; color: #888; margin: 0 auto 24px; max-width: 560px; }
-        .hero-label { font-size: 1em; font-weight: 700; color: #0a0a1a; margin: 0 auto 4px; max-width: 640px; }
-        .hero-formula { font-size: 1.5em; font-weight: 800; color: #0a0a1a; margin: 4px auto 24px; max-width: 640px; }
-        .hero-founder { font-size: 0.85em; color: #888; margin: 0 auto 28px; max-width: 640px; }
-        .btn { display: inline-block; background: #c9a227; color: #fff; padding: 16px 36px; border-radius: 6px; font-weight: 700; font-size: 1.05em; text-decoration: none; margin: 0 6px; }
-        .btn:hover { background: #a8821e; }
-        .section { margin: 60px 0; }
-        .section h2 { font-size: 1.8em; font-weight: 700; margin-bottom: 16px; color: #0a0a1a; border-bottom: 2px solid #c9a227; padding-bottom: 8px; display: inline-block; }
-        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px; margin: 30px 0; }
-        .card { background: #fff; padding: 28px; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.06); }
-        .card h3 { font-size: 1.15em; margin-bottom: 10px; color: #0a0a1a; }
-        .card p { color: #555; font-size: 0.95em; }
-        .highlight { background: linear-gradient(135deg, #0a0a2e, #1a1a4e); color: #fff; padding: 48px 32px; border-radius: 10px; text-align: center; margin: 40px 0; }
-        .highlight h2 { color: #fff; border-bottom-color: #c9a227; }
-        table { width: 100%; border-collapse: collapse; margin: 20px 0; font-size: 0.9em; }
-        th, td { border: 1px solid #ddd; padding: 10px 14px; text-align: left; }
-        th { background: #f0f0f5; }
-        .footer { text-align: center; padding: 40px 0; color: #888; font-size: 0.85em; border-top: 1px solid #ddd; margin-top: 60px; }
-        a { color: #c9a227; }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dual-Rhythm Architecture™ — Dynamic Operating System</title>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      background: #0a0a0a;
+      color: #f5f5f5;
+      font-family: 'Inter', system-ui, -apple-system, sans-serif;
+      line-height: 1.6;
+      padding: 24px 16px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .container {
+      max-width: 980px;
+      width: 100%;
+    }
+
+    /* 品牌标题 */
+    .brand-header {
+      text-align: center;
+      margin-bottom: 40px;
+    }
+    .brand-title {
+      font-size: 1.6rem;
+      font-weight: 700;
+      color: #ffffff;
+      margin-bottom: 6px;
+      line-height: 1.3;
+    }
+    .brand-subtitle {
+      font-size: 0.95rem;
+      color: rgba(255,255,255,0.6);
+      line-height: 1.5;
+    }
+
+    /* 引擎通用卡片 */
+    .engine {
+      background: #141414;
+      border: 1px solid rgba(255,255,255,0.08);
+      border-radius: 18px;
+      padding: 28px 24px;
+      margin-bottom: 32px;
+    }
+    .engine-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      margin-bottom: 20px;
+      flex-wrap: wrap;
+      gap: 8px;
+    }
+    .engine-title {
+      font-size: 1.3rem;
+      font-weight: 700;
+    }
+    .engine-subtitle {
+      font-size: 0.8rem;
+      color: rgba(255,255,255,0.5);
+    }
+
+    /* 颜色边框 */
+    .engine-blue { border-left: 4px solid #1a56db; }
+    .engine-orange { border-left: 4px solid #f08c2e; }
+    .engine-green { border-left: 4px solid #2e8b57; }
+    .engine-red { border-left: 4px solid #c92a2a; }
+    .engine-grey { border-left: 4px solid #6c757d; }
+
+    /* 公式 */
+    .formula {
+      font-size: 1.2rem;
+      font-weight: 500;
+      color: #ffffff;
+      margin-bottom: 20px;
+      text-align: center;
+    }
+
+    /* 输入区 */
+    .input-row {
+      display: flex;
+      gap: 16px;
+      flex-wrap: wrap;
+      margin-bottom: 16px;
+    }
+    .input-group {
+      flex: 1;
+      min-width: 120px;
+    }
+    .input-group label {
+      display: block;
+      font-size: 0.8rem;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      color: rgba(255,255,255,0.55);
+      margin-bottom: 6px;
+    }
+    .input-group input {
+      width: 100%;
+      height: 48px;
+      background: #0a0a0a;
+      border: 1px solid rgba(255,255,255,0.12);
+      border-radius: 10px;
+      color: #ffffff;
+      font-size: 1rem;
+      padding: 0 12px;
+      font-family: inherit;
+    }
+    .input-group input:focus {
+      outline: none;
+      border-color: rgba(255,255,255,0.3);
+    }
+
+    /* 按钮 */
+    .btn {
+      display: inline-block;
+      background: #ffffff;
+      color: #0a0a0a;
+      font-weight: 600;
+      font-size: 1rem;
+      padding: 14px 28px;
+      border: none;
+      border-radius: 12px;
+      cursor: pointer;
+      transition: opacity 0.2s;
+      font-family: inherit;
+    }
+    .btn:hover { opacity: 0.85; }
+    .btn:active { opacity: 0.7; }
+
+    /* 引擎② 9模块网格 */
+    .canvas-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 12px;
+    }
+    .canvas-module {
+      background: #0a0a0a;
+      border: 1px solid rgba(255,255,255,0.06);
+      border-radius: 12px;
+      padding: 20px 12px;
+      text-align: center;
+      font-size: 0.85rem;
+      color: rgba(255,255,255,0.65);
+      transition: all 0.3s ease;
+      min-height: 80px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    /* 引擎③ 仪表盘 */
+    .gauge-wrapper {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 32px;
+      flex-wrap: wrap;
+      margin-bottom: 20px;
+    }
+    .gauge {
+      width: 200px;
+      height: 200px;
+      position: relative;
+    }
+    .gauge svg {
+      width: 100%;
+      height: 100%;
+    }
+    .gauge-center {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      text-align: center;
+    }
+    .gauge-score {
+      font-size: 2.4rem;
+      font-weight: 700;
+      color: #ffffff;
+    }
+    .gauge-zone {
+      font-size: 0.85rem;
+      color: rgba(255,255,255,0.65);
+      margin-top: 4px;
+    }
+
+    /* 预警框 */
+    .alert-box {
+      background: #0a0a0a;
+      border: 1px solid rgba(255,255,255,0.08);
+      border-radius: 12px;
+      padding: 16px 20px;
+      text-align: center;
+      margin-bottom: 16px;
+      font-size: 0.9rem;
+      display: none;
+    }
+    .alert-yellow {
+      border-color: #f0c040;
+      color: #f0c040;
+      display: block;
+    }
+    .alert-red {
+      border-color: #e04040;
+      color: #e04040;
+      display: block;
+      animation: blink 1s infinite;
+    }
+    @keyframes blink {
+      50% { opacity: 0.5; }
+    }
+
+    /* 指数条 */
+    .index-bar-group {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+    .index-bar {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+    .index-bar-label {
+      width: 140px;
+      font-size: 0.8rem;
+      color: rgba(255,255,255,0.55);
+    }
+    .index-bar-track {
+      flex: 1;
+      height: 10px;
+      background: rgba(255,255,255,0.08);
+      border-radius: 5px;
+      overflow: hidden;
+    }
+    .index-bar-fill {
+      height: 100%;
+      border-radius: 5px;
+      background: #2e8b57;
+      transition: width 0.5s ease;
+    }
+
+    /* 引擎④ 图表容器 */
+    .chart-container {
+      position: relative;
+      width: 100%;
+      height: 320px;
+      background: rgba(255,255,255,0.02);
+      border-radius: 12px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .chart-container canvas {
+      width: 100% !important;
+      height: 100% !important;
+    }
+    .chart-placeholder {
+      color: rgba(255,255,255,0.3);
+      font-size: 0.9rem;
+    }
+
+    /* 引擎⑤ 进度条 */
+    .progress-row {
+      display: flex;
+      gap: 0;
+      margin-bottom: 16px;
+    }
+    .progress-phase {
+      flex: 1;
+      text-align: center;
+      padding: 12px 8px;
+      border-bottom: 3px solid rgba(255,255,255,0.08);
+      font-size: 0.8rem;
+      color: rgba(255,255,255,0.45);
+      transition: all 0.3s ease;
+    }
+    .progress-phase.active {
+      border-bottom-color: #c9a227;
+      color: #ffffff;
+      font-weight: 600;
+    }
+
+    /* 闭环 */
+    .closed-loop {
+      text-align: center;
+      font-size: 0.9rem;
+      color: rgba(255,255,255,0.45);
+      margin-top: 16px;
+      padding-top: 20px;
+      border-top: 1px solid rgba(255,255,255,0.06);
+      cursor: pointer;
+    }
+    .closed-loop:hover {
+      color: rgba(255,255,255,0.7);
+    }
+
+    /* 底部变现按钮 */
+    .cta-section {
+      display: flex;
+      gap: 16px;
+      flex-wrap: wrap;
+      margin: 32px 0;
+    }
+    .cta-card {
+      flex: 1;
+      min-width: 250px;
+      padding: 24px 28px;
+      border-radius: 14px;
+      text-decoration: none;
+      text-align: center;
+      transition: all 0.2s;
+    }
+    .cta-primary {
+      background: #ffffff;
+      color: #0a0a0a;
+    }
+    .cta-primary:hover { opacity: 0.9; }
+    .cta-secondary {
+      background: transparent;
+      color: #f5f5f5;
+      border: 1px solid rgba(255,255,255,0.15);
+    }
+    .cta-secondary:hover { border-color: rgba(255,255,255,0.3); }
+    .cta-label {
+      font-size: 0.85rem;
+      margin-bottom: 4px;
+    }
+    .cta-primary .cta-label { color: rgba(0,0,0,0.55); }
+    .cta-secondary .cta-label { color: rgba(255,255,255,0.55); }
+    .cta-price {
+      font-size: 1.6rem;
+      font-weight: 700;
+      margin-bottom: 4px;
+    }
+    .cta-primary .cta-price { color: #0a0a0a; }
+    .cta-secondary .cta-price { color: #ffffff; }
+    .cta-desc {
+      font-size: 0.85rem;
+      margin-bottom: 12px;
+    }
+    .cta-primary .cta-desc { color: rgba(0,0,0,0.55); }
+    .cta-secondary .cta-desc { color: rgba(255,255,255,0.55); }
+    .cta-btn-inner {
+      display: inline-block;
+      padding: 10px 24px;
+      border-radius: 8px;
+      font-weight: 600;
+      font-size: 0.9rem;
+    }
+    .cta-primary .cta-btn-inner {
+      background: #0a0a0a;
+      color: #ffffff;
+    }
+    .cta-secondary .cta-btn-inner {
+      background: transparent;
+      color: #ffffff;
+      border: 1px solid rgba(255,255,255,0.3);
+    }
+
+    /* 页脚 */
+    .footer {
+      text-align: center;
+      color: rgba(255,255,255,0.35);
+      font-size: 0.8rem;
+      margin-top: 48px;
+      padding-top: 24px;
+      border-top: 1px solid rgba(255,255,255,0.06);
+    }
+
+    /* 响应式 */
+    @media (max-width: 768px) {
+      .brand-title {
+        font-size: 1.2rem;
+      }
+      .input-row {
+        flex-direction: column;
+      }
+      .canvas-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+      .gauge {
+        width: 160px;
+        height: 160px;
+      }
+      .gauge-score {
+        font-size: 1.8rem;
+      }
+      .chart-container {
+        height: 240px;
+      }
+      .progress-row {
+        flex-direction: column;
+        gap: 4px;
+      }
+      .cta-section {
+        flex-direction: column;
+      }
+    }
+  </style>
 </head>
 <body>
-
 <div class="container">
 
-<!-- HERO -->
-<div class="hero">
-    <h1 class="hero-title">DUAL-RHYTHM ARCHITECTURE™</h1>
-    <p class="hero-sub">The Structural Leadership Control System (Paradigm Edition)</p>
-    <p class="hero-desc">The Stability Triad Model™ for Sustainable Performance in an AI-Driven World</p>
-
-    <h2 class="hero-family">Organizational Sync‑Stability Index™ (The OSS Index™) | Organizational Rhythm Governance™ (ORG™)</h2>
-    <p class="hero-desc">A new management category.</p>
-
-    <p class="hero-label">Executive Stability Formula™</p>
-    <p class="hero-formula">Instability Risk ∝ Acceleration / Recovery Integrity</p>
-
-    <p class="hero-founder">Founder & Author: 李宽续 (Li Kuanxu) | ORCID: <a href="https://orcid.org/0009-0006-7346-3999">0009-0006-7346-3999</a></p>
-
-    <a href="mailto:kuanxuhome@gmail.com" class="btn">📧 Contact →</a>
-    <a href="https://dualrhythmsystems.com/licensing" class="btn">📜 Licensing →</a>
-
-    <!-- 治理合规声明 -->
-    <div style="margin-top:32px; padding:20px 24px; background:#fffbf0; border:1px solid #c9a227; border-radius:6px; max-width:640px; margin-left:auto; margin-right:auto;">
-        <p style="font-size:0.8em; color:#c9a227; font-weight:700; letter-spacing:2px; text-align:center; margin:0 0 8px;">GOVERNANCE COMPLIANCE & LICENSING</p>
-        <p style="font-size:0.85em; color:#555; text-align:center; margin:0; line-height:1.6;">
-            Any enterprise implementing The OSS Index™ threshold logic within organizational control systems must obtain a formal license under DUAL-RHYTHM ARCHITECTURE™ to ensure the legality and structural stability of governance decisions.
-        </p>
+            <!-- ===== 顶部栏 ===== -->
+  <header style="display:flex; justify-content:space-between; align-items:center; padding:16px 0; margin-bottom:40px; border-bottom:1px solid rgba(255,255,255,0.08);">
+    <div style="font-weight:700; font-size:1rem; color:#ffffff;">DUAL‑RHYTHM ARCHITECTURE™</div>
+    <div style="display:flex; gap:12px; align-items:center;">
+      <a href="#" id="signInBtn" style="background:#ffffff; color:#0a0a0a; padding:8px 16px; border-radius:8px; text-decoration:none; font-weight:600; font-size:0.85rem;">Sign In</a>
+      <a href="https://dualrhythmsystems.com/licensing" style="background:#c9a227; color:#0a0a0a; padding:8px 18px; border-radius:8px; text-decoration:none; font-weight:600; font-size:0.85rem;">Start →</a>
     </div>
+  </header>
 
-<!-- PAIN POINTS -->
-<div class="section">
-    <h2>What Boards Fear Most</h2>
-    <div class="grid">
-        <div class="card"><h3>Acceleration Outpacing Recovery</h3><p>AI compresses decision cycles. Recovery windows shrink. Instability becomes nonlinear.</p></div>
-        <div class="card"><h3>AI Governance Is a Black Box</h3><p>GPT-5.5 can compute stability, but it cannot interpret it. Only the founder can.</p></div>
-        <div class="card"><h3>Black Swan Events Are No Longer Unforeseeable</h3><p>They're unmanageable — unless structural coherence is measured in advance.</p></div>
+  <!-- ===== 登录弹窗 ===== -->
+  <div id="loginModal" style="display:none; position:fixed; top:0; left:0; width:100%; height:100%; background:rgba(0,0,0,0.8); z-index:1000; justify-content:center; align-items:center;">
+    <div style="background:#141414; border:1px solid rgba(255,255,255,0.1); border-radius:16px; padding:36px 32px; max-width:400px; width:90%; text-align:center;">
+      <p style="font-size:1.2rem; font-weight:700; color:#ffffff; margin-bottom:24px;">Sign in to DUAL‑RHYTHM ARCHITECTURE™</p>
+      <a href="#" id="googleLoginBtn" style="display:block; background:#ffffff; color:#0a0a0a; padding:12px 20px; border-radius:8px; text-decoration:none; font-weight:600; margin-bottom:12px;">Continue with Google</a>
+      <a href="#" style="display:block; background:#24292e; color:#888; padding:12px 20px; border-radius:8px; text-decoration:none; font-weight:600; margin-bottom:12px; cursor:not-allowed;">Continue with GitHub — Coming Soon</a>
+      <a href="#" style="display:block; background:transparent; color:#888; padding:12px 20px; border-radius:8px; border:1px solid rgba(255,255,255,0.1); text-decoration:none; font-weight:600; cursor:not-allowed;">Continue with Email — Coming Soon</a>
+      <a href="#" id="closeModal" style="display:block; color:rgba(255,255,255,0.5); margin-top:16px; font-size:0.85rem; text-decoration:none;">Cancel</a>
     </div>
-</div>
+  </div>
 
-<!-- THE SOLUTION -->
-<div class="section">
-    <h2>The OSS Index™ — A Governance Currency for the AI Era</h2>
-    <p>The first board-level structural stability metric. Measure, diagnose, govern.</p>
-    <p style="margin-top:16px;"><strong>Adjusted Stability = (ER × PR × RI)<sup>(1/3)</sup> / (1 + A/100)</strong></p>
-   <p style="margin-top:10px;"><a href="https://zenodo.org/records/20025692">📄 Download the White Paper →</a></p>
-<p style="margin-top:8px; text-align:center;">
-<p style="margin-top:8px;"><a href="https://organizationalsyncstability.com">Organizational Sync‑Stability Index™ (The OSS Index™) →</a></p>
-</p>
-</div>
+  <!-- Google Sign-In JavaScript -->
+  <script src="https://accounts.google.com/gsi/client" async defer></script>
+  <script>
+    // 弹窗控制
+    document.getElementById('signInBtn').addEventListener('click', function(e) {
+      e.preventDefault();
+      document.getElementById('loginModal').style.display = 'flex';
+    });
+    document.getElementById('closeModal').addEventListener('click', function(e) {
+      e.preventDefault();
+      document.getElementById('loginModal').style.display = 'none';
+    });
 
-<!-- WHY THE FOUNDER -->
-<div class="highlight">
-    <h2>Why the Founder?</h2>
-    <p style="font-size:1.15em; margin:16px 0;">AI can compute stability. Only its founder can interpret it. Rooted in Zen wisdom of intrinsic sovereignty, translated into management physics.</p>
-</div>
+    // Google登录
+    function handleGoogleSignIn(response) {
+      const credential = response.credential;
+      const payload = JSON.parse(atob(credential.split('.')[1]));
+      const name = payload.name;
+      const email = payload.email;
+      
+      const signInBtn = document.getElementById('signInBtn');
+      signInBtn.textContent = name;
+      signInBtn.style.background = '#0a0a0a';
+      signInBtn.style.color = '#ffffff';
+      
+      document.getElementById('loginModal').style.display = 'none';
+      localStorage.setItem('userEmail', email);
+      localStorage.setItem('userName', name);
+    }
 
-<!-- SERVICES -->
-<div class="section">
-    <h2>Enterprise Services</h2>
-    <div class="grid">
-        <div class="card">
-            <h3>OSS™ Enterprise Diagnostic</h3>
-            <p>Founder-led organizational stability assessment based on The OSS Index™ framework. Includes OSS™ Score, Four-Dimension Radar Analysis (ER / PR / RI / A), Risk Zone Classification, and Board-ready Stability Report.</p>
-            <p style="margin-top:10px;"><strong>From $2,000</strong></p>
-        </div>
-        <div class="card">
-            <h3>Boardroom Stability Advisory</h3>
-            <p>Quarterly structural stability review: acceleration authorization, recovery integrity audit, capital allocation under structural constraints. Embedded in the board's decision rhythm cycle.</p>
-            <p style="margin-top:10px;"><strong>Custom Pricing</strong></p>
-        </div>
-        <div class="card">
-            <h3>Chief Rhythm Officer Certification</h3>
-            <p>Train internal executives to deploy Dual-Rhythm Architecture™ governance protocols. Includes Canvas™ operation, OSS™ interpretation, and Board Decision Rhythm Module facilitation.</p>
-            <p style="margin-top:10px;"><strong>Custom Pricing</strong></p>
-        </div>
+    google.accounts.id.initialize({
+      client_id: '905704598798-ng53rsc5btckn9pnrottl1htb76h4vim.apps.googleusercontent.com',
+      callback: handleGoogleSignIn
+    });
+    
+    document.getElementById('googleLoginBtn').addEventListener('click', function(e) {
+      e.preventDefault();
+      google.accounts.id.prompt();
+    });
+  </script>
+
+  <!-- ===== 品牌标题 ===== -->
+  <header class="brand-header">
+    <h1 class="brand-title">The Structural Leadership Control System (Paradigm Edition)</h1>
+    <p class="brand-subtitle">The Stability Triad Model™ for Sustainable Performance. A Structural Leadership Operating Paradigm for Direct CEO Use.</p>
+  </header>
+
+      <!-- ===== 引擎① The Stability Triad Model™ ===== -->
+  <section class="engine engine-blue" id="engine1">
+    <div class="engine-header">
+      <span class="engine-title">Stability Triad Model™</span>
+      <span class="engine-subtitle">[Core Formula + Conceptual Engine]</span>
     </div>
-</div>
+    <p class="formula">OSS™ = f ( ER × PR × RI ) / A</p>
+    <p style="text-align:center; font-size:0.85rem; color:rgba(255,255,255,0.5); margin-bottom:20px;">Theoretical Depth + Model Authority</p>
+    <div class="input-row">
+      <div class="input-group"><label>ER — Execution Rhythm</label><input type="number" id="er" value="80" min="0" max="100" placeholder="0–100"></div>
+      <div class="input-group"><label>PR — Pressure Regulation</label><input type="number" id="pr" value="80" min="0" max="100" placeholder="0–100"></div>
+      <div class="input-group"><label>RI — Recovery Integrity</label><input type="number" id="ri" value="80" min="0" max="100" placeholder="0–100"></div>
+      <div class="input-group"><label>A — Acceleration Intensity</label><input type="number" id="a" value="20" min="0" max="100" placeholder="0–100"></div>
+    </div>
+    <button class="btn" id="runDiagnosis">Run Diagnosis →</button>
+  </section>
 
-<!-- GLOBAL EVIDENCE CHAIN -->
-<div class="section">
-    <h2>Global Evidence Chain</h2>
-    <p style="font-size:0.9em; color:#888; margin-bottom:16px;">Permanently archived on Zenodo, operated by CERN. DOIs are immutable. Timestamps are independently verifiable.</p>
+    <!-- ===== 引擎② Canvas™ ===== -->
+  <section class="engine engine-orange" id="engine2">
+    <div class="engine-header">
+      <span class="engine-title">Dual-Rhythm Architecture™ Canvas™</span>
+      <span class="engine-subtitle">[Operational Interface + Modular Variable Mapping]</span>
+    </div>
+    <div class="canvas-grid" id="canvasGrid"></div>
+  </section>
 
-    <!-- 第一层：学术主权 -->
-    <h3 style="color:#c9a227; margin-top:24px;">Academic Sovereignty — Zenodo (CERN)</h3>
-    <table>
-        <tr><th>Archive</th><th>DOI</th><th>Date</th></tr>
-        <tr>
-            <td>Dual-Rhythm Architecture: The Structural Leadership Control System (Paradigm Edition)</td>
-            <td><a href="https://zenodo.org/records/19941449"><code>10.5281/zenodo.19941449</code></a></td>
-            <td>2026-03-02</td>
-        </tr>
-        <tr>
-            <td>Theoretical Architecture Spine of Dual-Rhythm Architecture™ — Ten-Year Structural Integrity Framework</td>
-            <td><a href="https://zenodo.org/records/19994305"><code>10.5281/zenodo.19994305</code></a></td>
-            <td>2026-03-02</td>
-        </tr>
-        <tr>
-            <td>Organizational Sync‑Stability Index™ (The OSS Index™) — The Standardized Logical Model</td>
-            <td><a href="https://zenodo.org/records/20025692"><code>10.5281/zenodo.20025692</code></a></td>
-            <td>2026-03-02</td>
-        </tr>
-        <tr>
-            <td>Self-Nature Wisdom™ — System Genesis: The Sovereignty Layer, 26 Questions with OpenAI ChatGPT (March 10–17, 2026)</td>
-            <td><a href="https://zenodo.org/records/20078153"><code>10.5281/zenodo.20078153</code></a></td>
-            <td>2026-03-17</td>
-        </tr>
-    </table>
-<!-- 第二层：代码标准与学者身份 -->
-<div class="section">
-    <h3 style="color:#c9a227; margin-top:24px;">Standard Repository & Researcher Identity</h3>
-    <table>
-        <tr><th>Platform</th><th>Identifier</th><th>Date</th></tr>
-        <tr>
-            <td>GitHub — Release v1.0.0</td>
-            <td><a href="https://github.com/KUANXUHOME/Dual-Rhythm-Architecture"><code>github.com/KUANXUHOME/Dual-Rhythm-Architecture</code></a></td>
-            <td>2026-05-01</td>
-        </tr>
-        <tr>
-            <td>ORCID — Researcher ID</td>
-            <td><a href="https://orcid.org/0009-0006-7346-3999"><code>0009-0006-7346-3999</code></a></td>
-            <td>—</td>
-        </tr>
-    </table>
-</div>
-    <!-- 第三层：商业出版 -->
-    <h3 style="color:#c9a227; margin-top:24px;">Commercial Publication</h3>
-    <table>
-        <tr><th>Platform</th><th>Title</th><th>Identifier</th><th>Date</th></tr>
-        <tr>
-            <td>Amazon KDP</td>
-            <td>Dual-Rhythm Architecture (Paradigm Edition)</td>
-            <td><a href="https://www.amazon.com/dp/B0GZ68YC2N"><code>B0GZ68YC2N</code></a></td>
-            <td>2026-05-01</td>
-        </tr>
-        <tr>
-            <td>Google Play Books</td>
-            <td>Dual-Rhythm Architecture (Paradigm Edition)</td>
-            <td><a href="https://play.google.com/store/books/details?id=Ej7VEQAAQBAJ"><code>Ej7VEQAAQBAJ</code></a></td>
-            <td>2026-05-01</td>
-        </tr>
-    </table>
+  <!-- ===== 引擎③ Stability Index™ ===== -->
+  <section class="engine engine-green" id="engine3">
+    <div class="engine-header">
+      <span class="engine-title">Stability Index™</span>
+      <span class="engine-subtitle">[Quantification & KPI Metrics]</span>
+    </div>
+    <div class="gauge-wrapper">
+      <div class="gauge" id="gaugeContainer"></div>
+    </div>
+    <div class="alert-box" id="alertBox"></div>
+    <div class="index-bar-group" id="indexBars"></div>
+    <!-- 新增：上一周期 + ΔOSS + 认证声明 -->
+    <div style="display:flex; justify-content:space-between; align-items:center; margin-top:12px; font-size:0.85rem; color:rgba(255,255,255,0.5);">
+      <span id="previousPeriod">Previous Period: —</span>
+      <span id="deltaOSS">ΔOSS / ΔTime: —</span>
+    </div>
+    <div style="text-align:center; margin-top:20px; font-size:0.8rem; color:rgba(255,255,255,0.4);">
+      Supports Certification · Measurement · Consulting Extensions
+    </div>
+  </section>
 
-    <!-- 第四层：源头著作 — 思想连续性 -->
-    <h3 style="color:#c9a227; margin-top:24px;">Foundational Works — The Thought Continuum</h3>
-    <table>
-        <tr><th>Platform</th><th>Title</th><th>Identifier</th></tr>
-        <tr>
-            <td>Amazon KDP</td>
-            <td>Returning: A Quiet Book for Those Who Are Tired of Becoming Better</td>
-            <td><a href="https://www.amazon.com/dp/B0GJ4RH5LZ"><code>B0GJ4RH5LZ</code></a></td>
-        </tr>
-        <tr>
-            <td>Google Play Books</td>
-            <td>Returning: A Quiet Book for Those Who Are Tired of Becoming Better</td>
-            <td><a href="https://play.google.com/store/books/details?id=S6zFEQAAQBAJ"><code>S6zFEQAAQBAJ</code></a></td>
-        </tr>
-        <tr>
-            <td>Amazon KDP</td>
-            <td>你不是不够努力，是已经透支了: 身心消耗的真相与修复路径</td>
-            <td><a href="https://www.amazon.com/dp/B0GN3W6CCT"><code>B0GN3W6CCT</code></a></td>
-        </tr>
-        <tr>
-            <td>Google Play Books</td>
-            <td>你不是不够努力，是已经透支了: 身心消耗的真相与修复路径</td>
-            <td><a href="https://play.google.com/store/books/details?id=T3rBEQAAQBAJ"><code>T3rBEQAAQBAJ</code></a></td>
-        </tr>
-    </table>
-</div>
-    <!-- LICENSING LINK -->
-<div style="width:100%; text-align:center; margin:10px 0 20px; display:block;">
-    <a href="licensing.html" style="color:#c9a227; font-weight:700; text-decoration:none; font-size:1em;">
-        📜 View Licensing Information →
+      <!-- ===== 引擎④ Rhythm Strategy Curve™ ===== -->
+  <section class="engine engine-red" id="engine4">
+    <div class="engine-header">
+      <span class="engine-title">Rhythm Strategy Curve™</span>
+      <span class="engine-subtitle">[Strategic Curve Visualization]</span>
+    </div>
+    <p style="text-align:center; font-size:0.8rem; color:rgba(255,255,255,0.45); margin-bottom:16px;">Traditional Organization Curve vs Dual-Rhythm Curve</p>
+    <div class="chart-container" id="chartContainer">
+      <canvas id="strategyChart"></canvas>
+    </div>
+    <p style="text-align:center; font-size:0.75rem; color:rgba(255,255,255,0.35); margin-top:8px;">Output Intensity → X-axis &nbsp;|&nbsp; Rhythm Stability → Y-axis</p>
+  </section>
+
+  <!-- ===== 引擎⑤ Narrative Thread™ ===== -->
+  <section class="engine engine-grey" id="engine5">
+    <div class="engine-header">
+      <span class="engine-title">Narrative Thread</span>
+      <span class="engine-subtitle">[Narrative Validation + Emotional Drive]</span>
+    </div>
+    <div class="progress-row" id="progressRow">
+      <div class="progress-phase active" data-phase="1">Phase 1: Diagnosis</div>
+      <div class="progress-phase" data-phase="2">Phase 2: Stabilization</div>
+      <div class="progress-phase" data-phase="3">Phase 3: Alignment</div>
+      <div class="progress-phase" data-phase="4">Phase 4: Scaling</div>
+    </div>
+  </section>
+
+    <!-- ===== 闭环 ===== -->
+  <div class="closed-loop" onclick="document.getElementById('engine1').scrollIntoView({behavior:'smooth'})">🔒 Indivisible Closed Loop — Back to Stability Triad Model™</div>
+
+    <!-- ===== 底部：变现按钮 ===== -->
+  <div class="cta-section">
+    <a href="https://dualrhythmsystems.com/licensing" class="cta-card cta-primary">
+      <div class="cta-label">Individual Plan</div>
+      <div class="cta-price">$20/month</div>
+      <div class="cta-desc">Personal governance framework access</div>
+      <span class="cta-btn-inner">Subscribe Now →</span>
     </a>
+    <a href="https://dualrhythmsystems.com/licensing" class="cta-card cta-secondary">
+      <div class="cta-label">Enterprise Assessment</div>
+      <div class="cta-price">Full Canvas + Founder Judgment</div>
+      <div class="cta-desc">9-variable full canvas + annual system upgrade</div>
+      <span class="cta-btn-inner">Contact for Licensing →</span>
+    </a>
+  </div>
+
+  <!-- ===== 页脚 ===== -->
+  <footer class="footer">
+    <p>© 2026 李宽续 (Li Kuanxu) | Kuanxuhome™ — All rights reserved. ORCID: 0009‑0006‑7346‑3999</p> Unauthorized AI training or algorithmic reconstruction is strictly prohibited.
+    <p style="margin-top:8px;"> Brand Clarification: The Organizational Sync‑Stability™ Index (The OSS Index™) is a sub‑brand of the DUAL‑RHYTHM ARCHITECTURE™ Ecosystem. Organizational Stability Index System™. It is not affiliated with any open source software (OSS) initiative.</p>
+    <p style="margin-top:8px;"><a href="https://zenodo.org/records/19941449" style="color:inherit;">Dual‑Rhythm Architecture™ Ecosystem Canonical System Specification — The Zenodo archive is the exclusive legitimate version. (Zenodo, CERN)</a></p>
+  </footer>
+
 </div>
 
-<!-- ABOUT -->
-<div class="section">
-    <h2>About the Founder</h2>
-    <p>Li Kuanxu (李宽续) is the founder of Dual-Rhythm Architecture™ and The OSS Index™. He is the first to systematically propose "rhythm stability" as the competitive dimension of the AI era, translating Zen wisdom of intrinsic sovereignty into the engineering language of management physics.</p>
-    <p style="margin-top:10px;"><strong>Contact:</strong> <a href="mailto:kuanxuhome@gmail.com">kuanxuhome@gmail.com</a></p>
-</div>
+<script>
+  (function() {
+    const canvasModules = [
+      'Initiative Load Density', 'Cross-Functional Sync', 'Decision Cycle Compression',
+      'Resource Elasticity', 'Leadership Escalation', 'Decision Bottleneck',
+      'Burnout Risk', 'Recovery Cycle', 'Cognitive Overload'
+    ];
 
-<!-- FOOTER -->
-<div class="footer">
-    <p>© 2026 李宽续 Li Kuanxu | Kuanxuhome™ | OFFICIAL SOVEREIGNTY LOCK-IN</p>
-    <p style="margin-top:8px;"><strong>® Brand Clarification:</strong> "The OSS Index™" is a proprietary governance metric. It is not affiliated with any open source software (OSS) initiative.</p>
-    <p style="margin-top:6px;"><a href="https://github.com/KUANXUHOME/Dual-Rhythm-Architecture-Standard">GitHub</a> | <a href="https://orcid.org/0009-0006-7346-3999">ORCID</a> | <a href="https://www.amazon.com/dp/B0GZ68YC2N">Amazon</a> | <a href="https://play.google.com/store/books/details?id=Ej7VEQAAQBAJ">Google Play</a></p>
-</div>
+    // 初始化引擎② 9模块
+    const grid = document.getElementById('canvasGrid');
+    canvasModules.forEach(name => {
+      const div = document.createElement('div');
+      div.className = 'canvas-module';
+      div.textContent = name;
+      grid.appendChild(div);
+    });
 
-</div>
+    // 引擎③仪表盘 (SVG)
+    const gaugeContainer = document.getElementById('gaugeContainer');
+    function buildGauge(score) {
+      const clamped = Math.min(100, Math.max(0, score));
+      const circumference = 2 * Math.PI * 80;
+      const offset = circumference - (clamped / 100) * circumference;
+      let color = '#2e8b57';
+      if (clamped < 35) color = '#e04040';
+      else if (clamped < 50) color = '#e08040';
+      else if (clamped < 65) color = '#f0c040';
+
+      gaugeContainer.innerHTML = `
+        <svg viewBox="0 0 200 200">
+          <circle cx="100" cy="100" r="80" fill="none" stroke="rgba(255,255,255,0.08)" stroke-width="12"/>
+          <circle cx="100" cy="100" r="80" fill="none" stroke="${color}" stroke-width="12"
+            stroke-dasharray="${circumference}" stroke-dashoffset="${offset}"
+            stroke-linecap="round" transform="rotate(-90 100 100)" style="transition: stroke-dashoffset 0.6s ease;"/>
+        </svg>
+        <div class="gauge-center">
+          <div class="gauge-score">${score.toFixed(1)}</div>
+          <div class="gauge-zone" id="gaugeZone">-</div>
+        </div>
+      `;
+    }
+    function setGaugeZone(score) {
+      const el = document.getElementById('gaugeZone');
+      if (!el) return;
+      if (score >= 80) el.textContent = 'Structural Advantage';
+      else if (score >= 65) el.textContent = 'Controlled Stability';
+      else if (score >= 50) el.textContent = 'Fragile Balance';
+      else if (score >= 35) el.textContent = 'Destabilization Risk';
+      else el.textContent = 'Structural Instability';
+    }
+
+        // 引擎③ 趋势预警 + 指数条 + 上一周期
+    const alertBox = document.getElementById('alertBox');
+    function updateAlert(current, previous) {
+      const prevEl = document.getElementById('previousPeriod');
+      const deltaEl = document.getElementById('deltaOSS');
+      
+      if (!previous) {
+        alertBox.className = 'alert-box';
+        prevEl.textContent = 'Previous Period: —';
+        deltaEl.textContent = 'ΔOSS / ΔTime: —';
+        return;
+      }
+      const delta = ((current - previous) / previous) * 100;
+      prevEl.textContent = `Previous Period: ${previous.toFixed(1)}`;
+      deltaEl.textContent = `ΔOSS / ΔTime: ${delta.toFixed(1)}%`;
+      
+      alertBox.className = 'alert-box';
+      if (delta < -15) {
+        alertBox.classList.add('alert-red');
+        alertBox.textContent = '🔴 RED ALERT: >15% decline detected. Mandatory structural intervention. Freeze expansion immediately.';
+      } else if (delta < -8) {
+        alertBox.classList.add('alert-yellow');
+        alertBox.textContent = '🟡 YELLOW ALERT: >8% decline detected. Escalate to board attention. Initiate diagnostic review.';
+      }
+    }
+
+    const indexBars = document.getElementById('indexBars');
+    function updateIndexBars(er, pr, ri) {
+      indexBars.innerHTML = '';
+      [
+        { label: 'Individual Rhythm Index', value: er },
+        { label: 'Team Rhythm Index', value: pr },
+        { label: 'Organizational Rhythm Index', value: ri }
+      ].forEach(item => {
+        const bar = document.createElement('div');
+        bar.className = 'index-bar';
+        bar.innerHTML = `
+          <span class="index-bar-label">${item.label}</span>
+          <div class="index-bar-track"><div class="index-bar-fill" style="width:${item.value}%;"></div></div>
+        `;
+        indexBars.appendChild(bar);
+      });
+    }
+
+    // 核心计算
+    function calculateOSS(er, pr, ri, a) {
+      const ssc = Math.pow(er * pr * ri, 1/3);
+      return ssc / (1 + a / 100);
+    }
+
+    // 引擎②模块动态颜色
+    function updateCanvasColors(er, pr, ri) {
+      const avg = (er + pr + ri) / 3;
+      const modules = document.querySelectorAll('.canvas-module');
+      modules.forEach(m => {
+        m.style.background = avg >= 80 ? '#0a2a0a' : avg >= 65 ? '#1a1a0a' : avg >= 50 ? '#2a1a00' : '#2a0a0a';
+        m.style.borderColor = avg >= 80 ? '#2e8b57' : avg >= 65 ? '#f0c040' : avg >= 50 ? '#e08040' : '#e04040';
+      });
+    }
+
+    // 引擎⑤ 进度条
+    const progressPhases = document.querySelectorAll('.progress-phase');
+    function updateProgress(ossScore) {
+      let activePhase = 1;
+      if (ossScore >= 80) activePhase = 4;
+      else if (ossScore >= 65) activePhase = 3;
+      else if (ossScore >= 50) activePhase = 2;
+      progressPhases.forEach(p => {
+        p.classList.remove('active');
+        if (parseInt(p.dataset.phase) === activePhase) p.classList.add('active');
+      });
+    }
+
+    // 引擎①按钮事件
+    document.getElementById('runDiagnosis').addEventListener('click', () => {
+      const er = parseFloat(document.getElementById('er').value) || 0;
+      const pr = parseFloat(document.getElementById('pr').value) || 0;
+      const ri = parseFloat(document.getElementById('ri').value) || 0;
+      const a = parseFloat(document.getElementById('a').value) || 0;
+
+      const oss = calculateOSS(er, pr, ri, a);
+
+      const prev = parseFloat(localStorage.getItem('prevOSS')) || null;
+      localStorage.setItem('prevOSS', oss);
+
+      buildGauge(oss);
+      setGaugeZone(oss);
+      updateAlert(oss, prev);
+      updateIndexBars(er, pr, ri);
+      updateCanvasColors(er, pr, ri);
+      updateProgress(oss);
+      updateStrategyMarker(oss, a);
+
+      document.getElementById('engine3').scrollIntoView({ behavior: 'smooth' });
+    });
+
+        // 引擎④ 图表初始化
+    const ctx = document.getElementById('strategyChart').getContext('2d');
+    const strategyChart = new Chart(ctx, {
+      type: 'line',
+      data: {
+        labels: ['0','10','20','30','40','50','60','70','80','90','100'],
+        datasets: [
+          {
+            label: 'Traditional Organization',
+            data: [100,95,88,78,65,50,35,22,15,10,8],
+            borderColor: '#c92a2a',
+            backgroundColor: 'transparent',
+            tension: 0.3,
+            pointRadius: 0,
+            pointBackgroundColor: Array(11).fill('transparent')
+          },
+          {
+            label: 'Dual-Rhythm Organization',
+            data: [100,96,90,84,78,74,72,71,70,70,70],
+            borderColor: '#2e8b57',
+            backgroundColor: 'transparent',
+            tension: 0.3,
+            pointRadius: 0,
+            pointBackgroundColor: Array(11).fill('transparent')
+          }
+        ]
+      },
+      options: {
+        responsive: true,
+        maintainAspectRatio: false,
+        plugins: {
+          legend: {
+            labels: { color: 'rgba(255,255,255,0.7)', font: { family: 'Inter' } }
+          }
+        },
+        scales: {
+          x: {
+            title: { display: true, text: 'Output Intensity', color: 'rgba(255,255,255,0.5)' },
+            ticks: { color: 'rgba(255,255,255,0.4)' },
+            grid: { color: 'rgba(255,255,255,0.05)' }
+          },
+          y: {
+            title: { display: true, text: 'Rhythm Stability', color: 'rgba(255,255,255,0.5)' },
+            ticks: { color: 'rgba(255,255,255,0.4)' },
+            grid: { color: 'rgba(255,255,255,0.05)' },
+            min: 0, max: 100
+          }
+        }
+      }
+    });
+
+    // 引擎④动态标记函数
+    function updateStrategyMarker(oss, a) {
+      const aIndex = Math.round(a / 10);
+      
+      strategyChart.data.datasets[0].pointRadius = Array(11).fill(0);
+      strategyChart.data.datasets[0].pointBackgroundColor = Array(11).fill('transparent');
+      strategyChart.data.datasets[1].pointRadius = Array(11).fill(0);
+      strategyChart.data.datasets[1].pointBackgroundColor = Array(11).fill('transparent');
+      
+      if (aIndex >= 0 && aIndex <= 10) {
+        strategyChart.data.datasets[0].pointRadius[aIndex] = 6;
+        strategyChart.data.datasets[0].pointBackgroundColor[aIndex] = '#c92a2a';
+        
+        strategyChart.data.datasets[1].pointRadius[aIndex] = 6;
+        strategyChart.data.datasets[1].pointBackgroundColor[aIndex] = '#2e8b57';
+        strategyChart.data.datasets[1].data[aIndex] = oss;
+      }
+      
+      strategyChart.update();
+    }
+
+    // 初始默认计算（避免仪表盘闪烁——直接显示默认值）
+    window.addEventListener('load', () => {
+      const oss = calculateOSS(80, 80, 80, 20);
+      buildGauge(oss);
+      setGaugeZone(oss);
+      updateIndexBars(80, 80, 80);
+      updateCanvasColors(80, 80, 80);
+      updateProgress(oss);
+    });
+  })();
+</script>
 </body>
 </html>
