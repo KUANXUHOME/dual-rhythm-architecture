@@ -3,11 +3,14 @@
 // 处理静态文件、OAuth 登录、会话管理
 // ============================================================
 
-import { jwtVerify, jwtSign } from './jwt-utils';
+import { jwtVerify, jwtSign } from './jwt-utils'; // 简单的 JWT 工具（见附录）
 
-// 所有私密信息从 Cloudflare 环境变量读取
-const GOOGLE_CLIENT_ID = '';
-const GOOGLE_CLIENT_SECRET = '';
+// ============================================================
+// 所有私密信息从环境变量读取
+// 代码中不写任何真实密钥
+// ============================================================
+const GOOGLE_CLIENT_ID = '';        // 留空，通过 env 获取
+const GOOGLE_CLIENT_SECRET = '';    // 留空
 const REDIRECT_URI = 'https://dualrhythmsystems.com/api/auth/callback/google';
 
 const APPLE_CLIENT_ID = '';
@@ -15,7 +18,7 @@ const APPLE_TEAM_ID = '';
 const APPLE_KEY_ID = '';
 const APPLE_PRIVATE_KEY = '';
 
-const JWT_SECRET = '';
+const JWT_SECRET = '';              // 留空
 const COOKIE_NAME = 'dr_auth';
 const SESSION_MAX_AGE = 60 * 60 * 24 * 7; // 7天
 
@@ -38,6 +41,7 @@ export default {
     const path = url.pathname;
     const method = request.method;
 
+    // 1. 处理 OAuth API 路由
     if (method === 'GET' && path === ROUTES.API.LOGIN_GOOGLE) {
       return handleGoogleLogin(env);
     }
@@ -57,10 +61,12 @@ export default {
       return handleLogout();
     }
 
+    // 2. 静态文件服务
     if (ROUTES.STATIC.includes(path) || path.endsWith('.html')) {
       return serveStatic(path, env);
     }
 
+    // 3. 404
     return new Response('Not Found', { status: 404 });
   },
 };
@@ -74,6 +80,7 @@ async function serveStatic(path, env) {
   if (filePath === '/licensing') filePath = '/licensing.html';
   if (!filePath.startsWith('/')) filePath = '/' + filePath;
 
+  // 从 Worker 的静态资源中读取（需要 wrangler.jsonc 中配置 assets.directory）
   try {
     const asset = await env.ASSETS.fetch(new URL(filePath, 'https://dummy.local'));
     if (asset.ok) {
@@ -96,7 +103,7 @@ function handleGoogleLogin(env) {
     scope: 'email profile',
     access_type: 'offline',
     prompt: 'consent',
-    state: crypto.randomUUID(),
+    state: crypto.randomUUID(), // 防 CSRF，可存储到 KV 验证
   });
   return Response.redirect(
     `https://accounts.google.com/o/oauth2/v2/auth?${params.toString()}`,
@@ -107,8 +114,10 @@ function handleGoogleLogin(env) {
 async function handleGoogleCallback(request, env) {
   const url = new URL(request.url);
   const code = url.searchParams.get('code');
+  const state = url.searchParams.get('state');
   if (!code) return new Response('Missing code', { status: 400 });
 
+  // 用 code 交换 token
   const tokenRes = await fetch('https://oauth2.googleapis.com/token', {
     method: 'POST',
     headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
@@ -123,12 +132,14 @@ async function handleGoogleCallback(request, env) {
   const tokens = await tokenRes.json();
   if (tokens.error) return new Response(tokens.error_description || 'Token Error', { status: 400 });
 
+  // 获取用户信息
   const userRes = await fetch('https://www.googleapis.com/oauth2/v2/userinfo', {
     headers: { Authorization: `Bearer ${tokens.access_token}` },
   });
   const profile = await userRes.json();
   if (profile.error) return new Response(profile.error.message || 'User Info Error', { status: 400 });
 
+  // 存储用户信息到 KV（以 email 为 key，可更复杂）
   const userKey = `user:${profile.email}`;
   await env.USER_STORE.put(userKey, JSON.stringify({
     email: profile.email,
@@ -138,6 +149,7 @@ async function handleGoogleCallback(request, env) {
     lastLogin: Date.now(),
   }));
 
+  // 生成 JWT 并设置 Cookie
   const token = await createJWT(profile.email, env);
   return new Response(null, {
     status: 302,
@@ -167,21 +179,27 @@ function handleAppleLogin(env) {
 }
 
 async function handleAppleCallback(request, env) {
+  // Apple 使用 POST 回调，需要在 body 中获取 code 和 id_token
   const contentType = request.headers.get('content-type') || '';
-  let code, id_token;
+  let code, id_token, state;
   if (contentType.includes('application/x-www-form-urlencoded')) {
     const body = await request.formData();
     code = body.get('code');
     id_token = body.get('id_token');
+    state = body.get('state');
   } else {
+    // 也可支持 query 参数（开发时可能用到）
     const url = new URL(request.url);
     code = url.searchParams.get('code');
     id_token = url.searchParams.get('id_token');
+    state = url.searchParams.get('state');
   }
   if (!code && !id_token) return new Response('Missing credentials', { status: 400 });
 
+  // 生成 client_secret (JWT)
   const clientSecret = await generateAppleClientSecret(env);
-
+  
+  // 交换 token
   const tokenRes = await fetch('https://appleid.apple.com/auth/token', {
     method: 'POST',
     headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
@@ -196,22 +214,28 @@ async function handleAppleCallback(request, env) {
   const tokens = await tokenRes.json();
   if (tokens.error) return new Response(tokens.error_description || 'Apple Token Error', { status: 400 });
 
-  let email;
+  // 解析 id_token 获取用户信息（如果苹果没有直接返回 email，则需从 id_token 解析）
+  let email, name;
   if (tokens.id_token) {
     const payload = parseJwtPayload(tokens.id_token);
     email = payload.email;
+    // 苹果只在首次授权时返回用户姓名，我们可以从 id_token 的 email 提取，姓名可留空
+    name = payload.name || '';
   } else {
+    // 降级
     return new Response('Unable to retrieve user email', { status: 400 });
   }
 
+  // 存储用户
   const userKey = `user:${email}`;
   await env.USER_STORE.put(userKey, JSON.stringify({
     email,
-    name: 'Apple User',
+    name: name || 'Apple User',
     provider: 'apple',
     lastLogin: Date.now(),
   }));
 
+  // 生成 JWT 并设置 Cookie
   const token = await createJWT(email, env);
   return new Response(null, {
     status: 302,
@@ -235,12 +259,15 @@ async function generateAppleClientSecret(env) {
   const payload = {
     iss: teamId,
     iat: now,
-    exp: now + 60 * 60,
+    exp: now + 60 * 60, // 1小时
     aud: 'https://appleid.apple.com',
     sub: clientId,
   };
   const header = { alg: 'ES256', kid: keyId };
 
+  // 使用 Web Crypto API 签名 ES256
+  const encoder = new TextEncoder();
+  const keyData = encoder.encode(privateKey);
   const key = await crypto.subtle.importKey(
     'pkcs8',
     pemToBinary(privateKey),
@@ -274,6 +301,7 @@ function parseJwtPayload(jwt) {
   return JSON.parse(decoded);
 }
 
+// 辅助：PEM to ArrayBuffer
 function pemToBinary(pem) {
   const lines = pem.split('\n');
   let encoded = '';
@@ -284,6 +312,7 @@ function pemToBinary(pem) {
   return Uint8Array.from(atob(encoded), c => c.charCodeAt(0)).buffer;
 }
 
+// 使用 Web Crypto 签名 JWT (ES256)
 async function signJwtWithKey(payload, header, key) {
   const encoder = new TextEncoder();
   const headerEncoded = base64UrlEncode(JSON.stringify(header));
@@ -312,6 +341,7 @@ async function handleMe(request, env) {
   if (!token) return new Response('{"user":null}', { status: 401 });
   try {
     const payload = await verifyJWT(token, env);
+    // 从 KV 取用户详情
     const userKey = `user:${payload.email}`;
     const userData = await env.USER_STORE.get(userKey, 'json');
     return new Response(JSON.stringify({ user: userData }), {
@@ -332,7 +362,13 @@ function handleLogout() {
   });
 }
 
+// Cookie 工具
 function getCookieValue(cookieStr, name) {
   const match = cookieStr.match(new RegExp(`(?:^|; )${name}=([^;]*)`));
   return match ? decodeURIComponent(match[1]) : null;
 }
+
+
+
+
+
