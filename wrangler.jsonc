@@ -1,7 +1,14 @@
 {
   "$schema": "node_modules/wrangler/config-schema.json",
   "name": "dual-rhythm-architecture",
+  "main": "worker.js",
   "compatibility_date": "2026-05-08",
+  "kv_namespaces": [
+    {
+      "binding": "USER_STORE",
+      "id": "a8954760c39f4043a0757a9d42780216"
+    }
+  ],
   "observability": {
     "enabled": true
   },
