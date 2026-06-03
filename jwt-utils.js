@@ -5,7 +5,7 @@ export async function jwtSign(payload, secret) {
   const base64Header = base64Url(JSON.stringify(header));
   const base64Payload = base64Url(JSON.stringify(payload));
   const toSign = `${base64Header}.${base64Payload}`;
-  
+
   const key = await crypto.subtle.importKey(
     'raw',
     encoder.encode(secret),
@@ -23,7 +23,7 @@ export async function jwtVerify(token, secret) {
   if (parts.length !== 3) throw new Error('Invalid token');
   const [base64Header, base64Payload, signature] = parts;
   const toSign = `${base64Header}.${base64Payload}`;
-  
+
   const encoder = new TextEncoder();
   const key = await crypto.subtle.importKey(
     'raw',
@@ -32,13 +32,19 @@ export async function jwtVerify(token, secret) {
     false,
     ['verify']
   );
-  const sigBytes = Uint8Array.from(atob(signature), c => c.charCodeAt(0));
+  const sigBytes = base64UrlToBytes(signature);
   const valid = await crypto.subtle.verify('HMAC', key, sigBytes, encoder.encode(toSign));
   if (!valid) throw new Error('Invalid signature');
-  const payloadJson = atob(base64Payload);
+  const payloadJson = new TextDecoder().decode(base64UrlToBytes(base64Payload));
   return JSON.parse(payloadJson);
 }
 
 function base64Url(str) {
   return btoa(str).replace(/\+/g, '-').replace(/\//g, '_').replace(/=+$/, '');
+}
+
+function base64UrlToBytes(b64url) {
+  const b64 = b64url.replace(/-/g, '+').replace(/_/g, '/');
+  const padded = b64 + '='.repeat((4 - (b64.length % 4)) % 4);
+  return Uint8Array.from(atob(padded), (c) => c.charCodeAt(0));
 }
