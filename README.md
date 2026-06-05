@@ -1,19 +1,38 @@
 # DUAL-RHYTHM ARCHITECTURE™
 
-## Dual-Rhythm Architecture™ — The Structural Leadership Control System (Paradigm Edition): The Stability Triad Model™ for Sustainable Performance in an AI-Driven World. A Structural Leadership Operating Paradigm for Direct CEO Use
+## The Structural Leadership Control System (Paradigm Edition): The Stability Triad Model™ for Sustainable Performance in an AI-Driven World. 
 
 ---
 
-## Licensing
+- **Founder & Author: 李宽续 (Li Kuanxu)**
 
-Enterprises applying Dual‑Rhythm Architecture™ — The Structural Leadership Control System (Paradigm Edition): The Stability Triad Model™ for Sustainable Performance in an AI‑Driven World together with the Organizational Sync‑Stability™ threshold logic within organizational control systems are required to obtain a formal license.
+- **System Origin: February 26, 2026**
 
-- **Legality** — compliance with governance standards  
-- **Structural Stability** — protection against systemic risk  
-- **Board Accountability** — alignment with executive oversight  
-- **Global Consistency** — adherence to the authoritative academic archive  
+- **Paradigm Edition: March 2, 2026**
 
-**For commercial or enterprise licensing inquiries, please contact:
+- **[dualrhythmsystems.com](https://dualrhythmsystems.com)**
+
+---
+
+## LICENSE
+
+**Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International (CC BY-NC-ND 4.0)**
+
+Enterprises applying Dual‑Rhythm Architecture™ — The Structural Leadership Control System (Paradigm Edition): The Stability Triad Model™ for Sustainable Performance in an AI‑Driven World, together with the Organizational Sync‑Stability™ Control System and its threshold‑based formula logic, are required to obtain a formal commercial license prior to any organizational deployment.
+
+**License Requirements**
+
+- **Legality — compliance with governance and regulatory standards**
+- **Structural Stability — protection against systemic organizational risk**
+- **Board Accountability — alignment with executive and fiduciary oversight**
+- **Global Consistency — adherence to the authoritative academic archive and canonical definitions**
+
+**Prohibited Actions**
+
+Unauthorized AI training, dataset extraction, model fine‑tuning, structural remapping, or algorithmic reconstruction of any part of this system is strictly prohibited.
+Any derivative work, transformation, or reinterpretation constitutes an infringement of system integrity and violates the license terms.
+
+**Commercial Licensing Contact
 [kuanxuhome@gmail.com](mailto:kuanxuhome@gmail.com)**
 
 Refer to:
@@ -40,11 +59,19 @@ Refer to:
 
 ---
 
+## github Canonical Specification
+
+[Dual-Rhythm Architecture™: The Structural Leadership Control System (Paradigm Edition)](https://github.com/KUANXUHOME/dual-rhythm-architecture/releases/tag/v1.0.0)
+
+[Theoretical Architecture Spine of Dual-Rhythm Architecture™ — Ten-Year Structural Integrity Framework](https://github.com/KUANXUHOME/dual-rhythm-architecture/blob/main/Theoretical_Architecture_Spine_Dual-Rhythm_Architecture_2026-03-02_Li_Kuanxu.pdf)
+
+---
+
 ## Global Benchmark
 
 **No existing framework measures structural stability under acceleration.**
 
-| Dimension | ISO 31000 | S&P 500 | MSCI ESG | Organizational Sync‑Stability™ |
+| Dimension | ISO 31000 | S&P 500 | MSCI ESG | DUAL-RHYTHM ARCHITECTURE™ |
 | :--- | :--- | :--- | :--- | :--- |
 | Quantifies Structural Stability | ❌ | ❌ | ❌ | ✅ |
 | Built for Acceleration Era | ❌ | ❌ | ❌ | ✅ |
@@ -54,19 +81,20 @@ Refer to:
 
 ---
 
-### Executive Stability Formula™
+## TABLE OF CONTENTS
 
-#### Instability Risk ∝ Acceleration / Recovery Integrity
-
----
-
-## Overview
+- **Total Visual System™ — Overview**
+- **Part I: Structural Leadership Operating Paradigm for Direct CEO Use**
+- **Part II: Board Decision Rhythm Module — The Board-Level Control Loop**
+- **Part III: Organizational Sync‑Stability™ Threshold Logic Model — The Trigger System**
+- **About the Author**
+- **Copyright**
 
 ---
 
 ## Dual-Rhythm Architecture™ — Total Visual System™
 
-Core Principle:
+**Core Principle:**
 AI provides computation. Humans provide rhythm.
 Stability is not a function of output volume. 
 It is a function of rhythm integration.
@@ -91,15 +119,15 @@ It is a function of rhythm integration.
 │          Stability Triad Model™               │
 │        [Core Formula + Conceptual Engine]     │
 │                                               │
-│  Sustainable Performance = ER × PR × RI × SC  │
+│         Stability™ = f ( ER × PR × RI ) / A   │
 │  Theoretical Depth + Model Authority          │
 └───────────────────────────────────────────────┘
                         │
                         ▼
 ┌───────────────────────────────────────────────┐
-│            Stability Index™                   │
+│ Organizational Sync-Stability™ CONTROL SYSTEM │
 │        [Quantification & KPI Metrics]         │
-│                                               │
+│  Sync-Stability™ = f(ER, PR, RI, Acceleration)│
 │  - Individual Rhythm Index                    │
 │  - Team Rhythm Index                          │
 │  - Organizational Rhythm Index                │
@@ -180,209 +208,185 @@ The narrative thread demonstrates real-world application throughout.
 
 ---
 
-## Layer Explanation  
-
-**Humanistic Layer (Interpretive Layer) → Engineering Calculation Layer (Paradigm Edition System)**
- 
- * Emotional Resonance → Execution Rhythm 
- * Pattern Recognition → Pressure Regulation
- * Rhythm Integrity → Recovery Integrity
- * Structural Clarity → Acceleration Intensity
+**End of Total Visual System™**
 
 ---
 
-## Descriptive Notes on Formula Variable Definitions
-
-The formal calculation formulas and definitions of this system were locked on March 1, 2026.
-
-## github Canonical Specification
-
-[Dual-Rhythm Architecture™: The Structural Leadership Control System (Paradigm Edition)](https://github.com/KUANXUHOME/dual-rhythm-architecture/releases/tag/v1.0.0)
-
-[Theoretical Architecture Spine of Dual-Rhythm Architecture™ — Ten-Year Structural Integrity Framework](https://github.com/KUANXUHOME/dual-rhythm-architecture/blob/main/Theoretical_Architecture_Spine_Dual-Rhythm_Architecture_2026-03-02_Li_Kuanxu.pdf)
+## A Structural Leadership Operating Paradigm for Direct CEO Use
 
 ---
 
-### PART I — THE CONTROL PROBLEM
+## PART I — THE CONTROL PROBLEM
 
-#### Why Boards Are Flying Blind Under Structural Speed
+### Why Boards Are Flying Blind Under Structural Speed
 
-* **The Acceleration Trap**  
+1. **The Acceleration Trap**  
   Performance Expands Faster Than Recovery Capacity  
 
-* **The Hidden Risk Curve**  
+2. **The Hidden Risk Curve**  
   Why Instability Grows Nonlinearly  
 
-* **The Structural Blind Spot**  
+3. **The Structural Blind Spot**  
   Why Boards Measure Output but Ignore Stability  
 
-* **The Capital Erosion Effect**  
+4. **The Capital Erosion Effect**  
   How Structural Volatility Destroys Efficiency Before Performance Falls  
-
----
 
 **Outcome:**  
 Instability is defined as a measurable structural control failure.
 
 ---
 
-### PART II — THE PHYSICS MODEL
+## PART II — THE PHYSICS MODEL
 
-#### The Governing Law of Organizational Stability
+### The Governing Law of Organizational Stability
 
-* **Stability as Regulated Oscillation**  
+5. **Stability as Regulated Oscillation**  
   Why Control Is Not Suppression  
 
-* **The Three Structural Variables**  
+6. **The Three Structural Variables**  
   - Execution Rhythm (ER)  
   - Pressure Regulation (PR)  
   - Recovery Integrity (RI)  
 
-* **The Instability Function**
+7. **The Instability Function**
 
 **Instability Risk ∝ Acceleration / Recovery Integrity**
 
-* **Nonlinear Collapse Dynamics**  
+8. **Nonlinear Collapse Dynamics**  
   Why Failure Accelerates Suddenly  
-
----
 
 **Outcome:**  
 A physics-based leadership model replaces behavioral explanation
 
 ---
 
-### PART III — THE CONTROL ARCHITECTURE
+## PART III — THE CONTROL ARCHITECTURE
 
-#### Dual-Rhythm as a Leadership Operating Structure
+### Dual-Rhythm as a Leadership Operating Structure
 
-* **The Two-Rhythm Principle**  
+9. **The Two-Rhythm Principle**  
   Performance Rhythm vs Stabilization Rhythm  
 
-* **Designing Acceleration Windows**  
+10. **Designing Acceleration Windows**  
 
-* **Designing Recovery Windows**  
+11. **Designing Recovery Windows**  
 
-* **Structural Imbalance Patterns**  
+12. **Structural Imbalance Patterns**  
   Burnout, Fragmentation, Strategic Drift  
-
----
 
 **Outcome:**  
 Dual-Rhythm becomes a structural design tool.
 
 ---
 
-### PART IV — BOARD DECISION RHYTHM MODULE
+## PART IV — BOARD DECISION RHYTHM MODULE
 
-#### Governing Stability at the Top
+### Governing Stability at the Top
 
-* **The Quarterly Structural Review**
-* **Acceleration Authorization Protocol**
-* **Recovery Protection Rule**
-* **Capital Allocation Under Structural Constraints**
-* **CEO Stability Brief Template**
-
----
+13. **The Quarterly Structural Review**
+14. **Acceleration Authorization Protocol**
+15. **Recovery Protection Rule**
+16. **Capital Allocation Under Structural Constraints**
+17. **CEO Stability Brief Template**
 
 **Outcome:**  
 A repeatable governance cycle is defined.
 
 ---
 
-### PART V — Organizational Sync-Stability™ CONTROL SYSTEM
+## PART V — The Organizational Sync-Stability™ CONTROL SYSTEM
 
-#### Organizational Sync-Stability™ Model
+### The Organizational Sync-Stability™ Model
 
-* **Defining Organizational Sync‑Stability™**
-Organizational Sync‑Stability™ = f(ER, PR, RI, Acceleration)
-* **The Three Stability Zones**  
+18. **Defining Organizational Sync‑Stability™**
+    
+**Organizational Sync‑Stability™ = f(ER, PR, RI, Acceleration)**
+
+19. **The Three Stability Zones**
+    
   - **Green:** Controlled Oscillation  
   - **Yellow:** Volatility Expansion  
   - **Red:** Collapse Acceleration
   
-* **Threshold Logic and Trigger Points**
+20. **Threshold Logic and Trigger Points**
 
-#### Organizational Sync-Stability™ Trend Velocity vs Static Score**
-* **Board-Level Early Warning System**
+21. **Organizational Sync-Stability™ Trend Velocity vs Static Score**
 
----
+22. **Board-Level Early Warning System**
 
 **Outcome:**  
 Organizational Sync-Stability™ becomes a structural risk trigger system.
 
 ---
 
-### PART VI — THE TRANSFORMATION CONTROL ARC
+## PART VI — THE TRANSFORMATION CONTROL ARC
 
-#### 12–24 Month Structural Stabilization
+### 12–24 Month Structural Stabilization
 
-* **Diagnosis Before Expansion**
-* **Stabilization Before Acceleration**
-* **Rhythm Realignment**
-* **Endurance Scaling**
-
----
+23. **Diagnosis Before Expansion**
+24. **Stabilization Before Acceleration**
+25. **Rhythm Realignment**
+26. **Endurance Scaling**
 
 **Outcome:**  
 Transformation is sequenced under control, not shock.
 
 ---
 
-### PART VII — THE GOVERNANCE PROTOCOL
+## PART VII — THE GOVERNANCE PROTOCOL
 
-#### Organizational Rhythm Governance™
+### Organizational Rhythm Governance™
 
-* **Organizational Rhythm Governance™ as Governance Discipline**
-* **Embedding Structural Reviews into Board Cycles**
-* **Institutionalizing Stability Reporting**
-
----
+27. **Organizational Rhythm Governance™ as Governance Discipline**
+    
+28. **Embedding Structural Reviews into Board Cycles**
+    
+29. **Institutionalizing Stability Reporting**
 
 **Outcome:**  
 Governance becomes structural, not narrative.
 
 ---
 
-### PART VIII — LONG-HORIZON DEFENSIBILITY
+## PART VIII — LONG-HORIZON DEFENSIBILITY
 
-* **Structural Speed Beyond AI**
+30. **Structural Speed Beyond AI**
 
-* **Why Stability Physics Outlasts Technology**
+31. **Why Stability Physics Outlasts Technology**
 
-* **The Coherent Organization Standard**
-
----
+32. **The Coherent Organization Standard**
 
 **Final Position:**  
 Structural Leadership replaces Output Leadership.
 
 ---
 
-### Part II: Board Decision Rhythm Module
+## Part II: Board Decision Rhythm Module
 
 * **The Board-Level Structural Cycle (Quarterly)**
 
-The board's decision rhythm must have a fixed cadence. The following structure embeds Organizational Sync‑Stability™ directly into the quarterly governance cycle, transforming it from a diagnostic metric into a Board-Level Control Loop.
+The board's decision rhythm must have a fixed cadence. The following structure embeds The Organizational Sync‑Stability™ Index directly into the quarterly governance cycle, transforming it from a diagnostic metric into a Board-Level Control Loop.
 
 ---
 
-#### Step 1 — Organizational Sync‑Stability™ Review
+### Step 1 — Organizational Sync‑Stability™ Review
 
 **The board session opens with a structured review of organizational stability:**
 
-* **Current 
- Value: What is the absolute Organizational Sync‑Stability™ score as of this quarter?**
+* **Current Organizational Sync‑Stability™ Value: What is the absolute Organizational Sync‑Stability™ score as of this quarter?**
+
 * **2-Quarter Trend: What is the directional movement over the preceding two quarters?**
-* **Rate of Change: What is the velocity of Organizational Sync‑Stability™ movement (ΔOrganizational Sync‑Stability™ / ΔTime)?**
+  
+* **Rate of Change: What is the velocity of Organizational Sync‑Stability™ movement (Δ Organizational Sync‑Stability™ / Δ Time)?**
 
 ---
 
-**This step establishes the baseline stability condition before any strategic decision is made.**
+This step establishes the **baseline stability condition** before any strategic decision is made.
 
 ---
 
-#### Step 2 — Acceleration Authorization
+### Step 2 — Acceleration Authorization
 
 **Before approving any expansion initiative, the board must answer two mandatory questions:**
   
@@ -392,13 +396,13 @@ The board's decision rhythm must have a fixed cadence. The following structure e
 
 ---
 
-**This step ensures that acceleration is never authorized on a structurally unstable foundation. If Recovery Integrity is below threshold, acceleration is deferred and a Stabilization Window is declared.**
+**This step ensures that **acceleration is never authorized on a structurally unstable foundation.** If Recovery Integrity is below threshold, acceleration is deferred and a Stabilization Window is declared.
 
 ---
 
-#### Step 3 — Capital Allocation Adjustment
+### Step 3 — Capital Allocation Adjustment
 
-**Organizational Sync‑Stability™ thresholds trigger automatic capital allocation rules:**
+Organizational Sync‑Stability™ thresholds trigger **automatic capital allocation rules:**
 
 * **Organizational Sync‑Stability™ < Yellow Threshold → Freeze expansion budget — no new growth capital deployed until stability is restored**
   
@@ -410,8 +414,7 @@ The board's decision rhythm must have a fixed cadence. The following structure e
 
 ---
 
-
-#### Step 4 — CEO Structural Brief 
+### Step 4 — CEO Structural Brief 
 
 **The CEO must present a structured response to three non-negotiable questions:**
 
@@ -429,61 +432,71 @@ Determine whether the time available for system recovery is shrinking, signaling
 
 ---
 
-### Result: Board-Level Control Loop
+## Result: Board-Level Control Loop
 
- **This four-step cycle transforms the board from a passive reviewer of financial reports into an active governor of structural stability.** 
- **Organizational Sync‑Stability™ becomes the operating system of the boardroom — not a dashboard metric, but a decision trigger.
-Organizational Sync‑Stability™ Review → Acceleration Authorization → Capital Allocation Adjustment → CEO Structural Brief → (return to Organizational Sync‑Stability™ Review next quarter)**
-
----
-
-### Part III: Organizational Sync‑Stability™ Threshold Logic Model
-
-#### Core Principle
+ **This four-step cycle transforms the board from a passive reviewer of financial reports into an  active governor of structural stability.** 
  
-**Organizational Sync‑Stability™ cannot remain a formula alone. It must function as a trigger system — converting quantitative measurement into mandatory governance action.**
+ **The Organizational Sync‑Stability™ becomes the operating system of the boardroom — not a dashboard metric, but a decision trigger.**
+ 
+**Organizational Sync‑Stability™ Review → Acceleration Authorization → Capital Allocation Adjustment → CEO Structural Brief → (return to Organizational Sync‑Stability™ Review next quarter)**
 
 ---
 
-#### Foundational Formula Structure (Conceptual Layer)
+## Part III: Organizational Sync‑Stability™ Threshold Logic Model
+
+### Core Principle
+ 
+**The Organizational Sync‑Stability™ cannot remain a formula alone. It must function as a trigger system — converting quantitative measurement into mandatory governance action.**
+
+---
+
+### Foundational Formula Structure (Conceptual Layer)
 
 **Organizational Sync‑Stability™ = (ER × PR × RI) / Acceleration Pressure**
 
 ---
 
-#### Threshold Zone Model
+### Threshold Zone Model
 
 **Assuming Organizational Sync‑Stability™ normalized to 0–100:**
 
 **70–100**
-#### Controlled Synchronization
-→ Acceleration May Be Authorized
+
+### Controlled Synchronization
+
+→ **Acceleration May Be Authorized**
 
 ---
 
 **50–69**
-#### Volatility Expansion Zone
-→ Expansion must be restricted
 
-→ Recovery functions must be reinforced. 
+### Volatility Expansion Zone
 
-**The system is stretching toward its stability boundary.**
+→ Expansion must be **restricted**
+
+→ Recovery functions must be **reinforced.** 
+
+The system is stretching toward its stability boundary.
 
 ---
 
 **30–49**
-#### Structural Risk Zone
-→ All non-core growth is frozen
 
-→ Governance intervention is initiated
+### Structural Risk Zone
+
+→ All **non-core growth is frozen**
+
+→ Governance intervention is **initiated**
 
 **The system is approaching structural deformation**
 
 ---
 
 **<30**
-#### Collapse Acceleration Zone
-A mandatory Stabilization Cycle is triggered. 
+
+### Collapse Acceleration Zone
+
+A **mandatory Stabilization Cycle** is triggered. 
 
 All discretionary expansion ceases. 
 
@@ -494,11 +507,10 @@ The sole priority is structural recovery.
 ### Second Layer: Trend Logic
 
 More important than the absolute value is:
+
 the rate and direction of change:
 
----
-
-**Δ Organizational Sync‑Stability™ / ΔTime**
+**Δ Organizational Sync‑Stability™ / Δ Time**
 
 **>8%  Yellow Alert**
 
@@ -510,14 +522,15 @@ Mandatory structural intervention. Freeze expansion. Deploy governance override.
 
 ---
 
-### Result: A Board-Ready Rule System
+## Result: A Board-Ready Rule System
 
-These thresholds and trend triggers are not theoretical constructs. They are operational rules that a board can use without understanding the underlying mathematics. The board does not need to compute Organizational Sync-Stability™ — it needs to respond to Organizational Sync-Stability™ signals.
-This is what transforms Organizational Sync-Stability™ from a measurement tool into a governance operating system.
+These thresholds and trend triggers are not theoretical constructs. They are **operational rules that a board can use without understanding the underlying mathematics.** The board does not need to compute Organizational Sync-Stability™ — it needs to **respond to Organizational Sync-Stability™ signals.**
+
+This is what transforms The Organizational Sync-Stability™ from a measurement tool into a **governance operating system.**
 
 ---
 
-### Dual‑Rhythm Architecture™ Ecosystem Structure
+## Dual‑Rhythm Architecture™ Ecosystem Structure
 
 ```txt
 Zen Self-Nature Wisdom™
@@ -530,18 +543,18 @@ Organizational Sync-Stability™
 ```
 ---
 
-### Dual‑Rhythm Architecture™ Ecosystem Roles
+## Dual‑Rhythm Architecture™ Ecosystem Roles
 
 | System | Role | Layer |
 | :--- | :--- | :--- |
 | Zen Self‑Nature Wisdom™ | Civilizational and human stability archive | Civilizational Layer |
-| Dual‑Rhythm Architecture™ | The Structural Leadership Control System (Paradigm Edition) | The Structural Leadership Control (Paradigm Edition) |
-| Organizational Rhythm Governance™ | A New Management Category | Governance Layer |
-| Organizational Sync‑Stability™ | The World's Only Organizational Sync‑Stability™ System |Enterprise Audit Reports and Global Research and Intelligence Archive |
+| Dual‑Rhythm Architecture™ | The Structural Leadership Control System (Paradigm Edition) | A Structural Leadership Operating Paradigm for Direct CEO Use |
+| Organizational Rhythm Governance™ | A New Management Category | Governance becomes structural, not narrative |
+| Organizational Sync‑Stability™ | becomes a structural risk trigger system |
 
 ---
 
-### Dual‑Rhythm Architecture™ Official Ecosystem
+## Dual‑Rhythm Architecture™ Official Ecosystem
 
 | Brand | Identifier |
 | :--- | :--- |
@@ -552,14 +565,127 @@ Organizational Sync-Stability™
 
 ---
 
-### Legal
+## ABOUT THE AUTHOR
 
-Dual‑Rhythm Architecture™ — The Structural Leadership Control System (Paradigm Edition): The Stability Triad Model™ for Sustainable Performance in an AI‑Driven World, as well as the Organizational Sync‑Stability™ threshold logic within organizational control systems, are protected intellectual property (CC BY‑NC‑ND 4.0).
+Li Kuanxu (李宽续) is the founder of DUAL‑RHYTHM ARCHITECTURE™
+The Structural Leadership Control System (Paradigm Edition) —
+A Structural Leadership Operating Paradigm for Direct CEO Use,
+the Organizational Sync‑Stability™ Control System,
+and the creator of the new management category Organizational Rhythm Governance™  
+(结构性治理 / 节律治理新品类).
 
-Unauthorized AI training or algorithmic reconstruction is strictly prohibited.
+---
+
+## 100% Conforming to Thich Nhat Hanh's Dharma Code Exposition on the Diamond Sutra — October 2, 2011
+[YouTube Video Link](https://www.youtube.com/watch?si=xUiif_zEiKNffaIA&v=xfcxM9DfJ_A&feature=youtu.be)
+
+She translated The Four Appearances (四相) from Venerable One Chan Master’s Diamond Sutra Codex Teachings into a four‑variable PHYSICS MODEL, establishing the engineering language of Management Physics for the Stability Risk Control Paradigm.
+
+### The Four Appearances (四相)
+
+- **Attachment to a Self（我相）**
+
+- **Attachment to a Person（人相）**
+
+- **Attachment to Beings（众生相）**
+
+- **Attachment to a Life‑Span（寿者相）**
+
+### Inter‑being（互即互入）
+
+### The Causality of No‑Birth and No‑Death（不生不灭的因果观）
+
+### The Non‑Duality of Buddha and Sentient Beings（佛与众生不二）
+
+---
+
+### Stability Triad Model™
+
+#### Stability™ = f ( ER × PR × RI ) / A 
+
+- **EXECUTION RHYTHM (EP)** 
+- **PRESSURE REGULATION (PR)** 
+- **RI — RECOVERY INTEGRITY (PI)** 
+- **A — ACCELERATION INTENSITY (A)** 
+
+### The Instability Function / Executive Stability Formula™ 
+
+#### Instability Risk ∝ Acceleration / Recovery Integrity
+
+She is the first to systematically define Rhythmic Stability as the new competitive dimension in the age of artificial intelligence.
+
+---
+
+## Dual-Rhythm Architecture™ is a five-layer closed system — an indivisible whole in which each layer validates and completes the others. 
+
+### Engine I: Stability Triad Model™
+
+#### Stability™ = f ( ER × PR × RI ) / A 
+
+#### Instability Risk ∝ Acceleration / Recovery Integrity
+
+---
+
+### Engine II: Dual‑Rhythm Architecture™ Canvas™
+
+[Operational Interface + Modular Variable Mapping]
+
+#### 9‑Module Rhythm Mapping Canvas
+
+---
+
+### Engine III: Organizational Sync‑Stability™ CONTROL SYSTEM
+
+#### Defining Organizational Sync‑Stability™ = f(ER, PR, RI, Acceleration)
+
+---
+
+[Quantification & KPI Metrics]
+
+Individual Rhythm Index
+
+Team Rhythm Index
+
+Organizational Rhythm Index
+
+Previous Period: —
+
+Δ Organizational Sync‑Stability™ / ΔTime: —
+
+Supports: Certification · Measurement · Consulting Extensions
+
+---
+
+### Engine IV: Rhythm Strategy Curve™
+
+[Strategic Curve Visualization]
+
+Traditional Organization Curve vs Dual‑Rhythm Curve
+
+X‑axis → Output Intensity  
+Y‑axis → Rhythm Stability
+
+---
+
+### Engine V: Narrative Thread
+
+[Narrative Validation + Emotional Drive]
+
+Phase 1: Diagnosis
+
+Phase 2: Stabilization
+
+Phase 3: Alignment
+
+Phase 4: Scaling
+
+---
+
+### 🔒 Indivisible Closed Loop — Back to Stability Triad Model™
 
 ---
 
 © 2026 Dual-Rhythm Architecture™. All rights reserved.
 
-Founded: 李宽续 (Li Kuanxu) | ORCID: 0009-0006-7346-3999
+Founder: Li Kuanxu (李宽续)
+ORCID: 0009-0006-7346-3999
