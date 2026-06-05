@@ -127,7 +127,7 @@ It is a function of rhythm integration.
 ┌───────────────────────────────────────────────┐
 │ Organizational Sync-Stability™ CONTROL SYSTEM │
 │        [Quantification & KPI Metrics]         │
-│  Sync-Stability™ = f(ER, PR, RI, Acceleration)│
+│  Stability™ = f(ER, PR, RI, Acceleration)│
 │  - Individual Rhythm Index                    │
 │  - Team Rhythm Index                          │
 │  - Organizational Rhythm Index                │
