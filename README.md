@@ -101,10 +101,44 @@ It is a function of rhythm integration.
 
 ---
 
+## THE PHYSICS MODEL
+
+- **The Governing Law of Organizational Stability**
+- **Stability as Regulated Oscillation**
+- **Why Control Is Not Suppression**
+
+### The Three Structural Variables
+
+**Execution Rhythm (ER)**
+**Pressure Regulation (PR)**
+**Recovery Integrity (RI)**
+
+### The Instability Function
+
+**Instability Risk ∝ Acceleration / Recovery Integrity**
+
+- **Nonlinear Collapse Dynamics**
+- **Why Failure Accelerates Suddenly**
+
+**Outcome:**
+
+A physics-based leadership model replaces behavioral explanations.
+
+---
+
 ## System Overview (Single-Page Visual Logic)
 
 ```txt
 
+┌───────────────────────────────────────────────┐
+│          Stability Triad Model™               │
+│        [Core Formula + Conceptual Engine]     │
+│                                               │
+│         Stability™ = ER × PR × RI             │
+│  Theoretical Depth + Model Authority          │
+└───────────────────────────────────────────────┘
+                        │
+                        ▼
 ┌───────────────────────────────────────────────┐
 │       Dual-Rhythm Architecture™ Canvas™       │
 │       [Operational Interface + Modular        │
@@ -116,18 +150,9 @@ It is a function of rhythm integration.
                         │
                         ▼
 ┌───────────────────────────────────────────────┐
-│          Stability Triad Model™               │
-│        [Core Formula + Conceptual Engine]     │
-│                                               │
-│         Stability™ = f ( ER × PR × RI ) / A   │
-│  Theoretical Depth + Model Authority          │
-└───────────────────────────────────────────────┘
-                        │
-                        ▼
-┌───────────────────────────────────────────────┐
 │ Organizational Sync-Stability™ CONTROL SYSTEM │
 │        [Quantification & KPI Metrics]         │
-│  Stability™ = f(ER, PR, RI, Acceleration)│
+│  Stability™ = f(ER, PR, RI, Acceleration)     │
 │  - Individual Rhythm Index                    │
 │  - Team Rhythm Index                          │
 │  - Organizational Rhythm Index                │
@@ -452,7 +477,7 @@ Determine whether the time available for system recovery is shrinking, signaling
 
 ### Foundational Formula Structure (Conceptual Layer)
 
-**Organizational Sync‑Stability™ = (ER × PR × RI) / Acceleration Pressure**
+**Organizational Sync‑Stability™ =  f(ER × PR × RI) / Acceleration Pressure**
 
 ---
 
@@ -599,30 +624,51 @@ She translated The Four Appearances (四相) from Venerable One Chan Master’s 
 
 ---
 
-### Stability Triad Model™
+### THE PHYSICS MODEL
 
-#### Stability™ = f ( ER × PR × RI ) / A 
+- **The Governing Law of Organizational Stability**
+- **Stability as Regulated Oscillation**
+- **Why Control Is Not Suppression**
 
-- **EXECUTION RHYTHM (EP)** 
-- **PRESSURE REGULATION (PR)** 
-- **RI — RECOVERY INTEGRITY (PI)** 
-- **A — ACCELERATION INTENSITY (A)** 
+### The Three Structural Variables
 
-### The Instability Function / Executive Stability Formula™ 
+### THE STABILITY TRIAD MODEL™
 
-#### Instability Risk ∝ Acceleration / Recovery Integrity
+- **Execution Rhythm (ER)**
+- **Pressure Regulation (PR)**
+- **Recovery Integrity (RI)**
 
-She is the first to systematically define Rhythmic Stability as the new competitive dimension in the age of artificial intelligence.
+### The Instability Function
+
+**Instability Risk ∝ Acceleration / Recovery Integrity**
+
+- **Nonlinear Collapse Dynamics**
+- **Why Failure Accelerates Suddenly**
+
+**Outcome:**
+
+A physics-based leadership model replaces behavioral explanations.
 
 ---
 
-## Dual-Rhythm Architecture™ is a five-layer closed system — an indivisible whole in which each layer validates and completes the others. 
+## Dual-Rhythm Architecture™ — Total Visual System™
 
-### Engine I: Stability Triad Model™
+**Core Principle:**
+AI provides computation. Humans provide rhythm.
+Stability is not a function of output volume. 
+It is a function of rhythm integration.
 
-#### Stability™ = f ( ER × PR × RI ) / A 
+---
 
-#### Instability Risk ∝ Acceleration / Recovery Integrity
+## System Overview (Single-Page Visual Logic)
+
+### Engine I: Stability Triad Model™   
+ 
+ [Core Formula + Conceptual Engine]    
+
+**Stability™ = ER × PR × RI**     
+  
+ Theoretical Depth + Model Authority  
 
 ---
 
@@ -650,7 +696,7 @@ Organizational Rhythm Index
 
 Previous Period: —
 
-Δ Organizational Sync‑Stability™ / ΔTime: —
+**Δ Organizational Sync‑Stability™ / ΔTime: —**
 
 Supports: Certification · Measurement · Consulting Extensions
 
@@ -687,5 +733,5 @@ Phase 4: Scaling
 
 © 2026 Dual-Rhythm Architecture™. All rights reserved.
 
-Founder: Li Kuanxu (李宽续)
+Founder: 李宽续 (Li Kuanxu)
 ORCID: 0009-0006-7346-3999
